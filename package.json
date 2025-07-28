@@ -1,0 +1,36 @@
+{
+  "name": "@kuriyota/table-json",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && vite build",
+    "test": "vitest"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "README.*.md"
+  ],
+  "types": "main.d.ts",
+  "exports": {
+    ".": {
+      "require": "./main.cjs.js",
+      "import": "./main.es.js",
+      "default": "./main.es.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuriyota/table-json.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^12.1.4",
+    "tslib": "^2.8.1",
+    "typescript": "~5.8.3",
+    "vite": "^7.0.4",
+    "vitest": "^3.2.4"
+  }
+}
