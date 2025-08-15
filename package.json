@@ -1,7 +1,8 @@
 {
   "name": "@kuriyota/table-json",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
+  "license": "MIT",
   "scripts": {
     "build": "tsc && vite build",
     "test": "vitest"
@@ -11,12 +12,12 @@
     "README.md",
     "README.*.md"
   ],
-  "types": "main.d.ts",
   "exports": {
     ".": {
-      "require": "./main.cjs.js",
-      "import": "./main.es.js",
-      "default": "./main.es.js"
+      "require": "./dist/main.cjs.js",
+      "import": "./dist/main.es.js",
+      "types": "./dist/main.d.ts",
+      "default": "./dist/main.es.js"
     }
   },
   "repository": {
